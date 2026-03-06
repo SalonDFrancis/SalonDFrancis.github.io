@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Salón D' Francis — Eventos que perduran</title>
+
+  <!-- Fuentes de Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+  <!-- Tu archivo CSS -->
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+  <!-- ========================
+       NAVBAR
+  ======================== -->
+  <nav>
+    <div class="nav-logo">✦ D' Francis</div>
+    <ul class="nav-links">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#ubicacion">Ubicación</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- ========================
+       HERO
+  ======================== -->
+  <section class="hero" id="inicio">
+    <div>
+      <div class="hero-badge">✦ Eventos exclusivos ✦</div>
+      <h1>Tu evento,<br/><span>nuestra pasión</span></h1>
+      <p>Creamos momentos únicos e irrepetibles. Cumpleaños, bodas, corporativos — hacemos que cada celebración cuente.</p>
+      <div class="btn-group">
+        <a href="https://wa.me/51984336412?text=Hola!%20Quiero%20consultar%20sobre%20un%20evento" target="_blank" class="btn btn-primary">💬 Consultá por WhatsApp</a>
+        <a href="#servicios" class="btn btn-outline">Ver servicios</a>
+      </div>
+    </div>
+    <div class="scroll-hint">Scroll</div>
+  </section>
+
+  <!-- ========================
+       SERVICIOS
+  ======================== -->
+  <section id="servicios">
+    <div class="servicios-header">
+      <p class="section-label">Lo que ofrecemos</p>
+      <h2 class="section-title">Servicios que transforman<br/>celebraciones en recuerdos</h2>
+      <p class="section-sub">Nos encargamos de cada detalle para que solo tú disfrutes.</p>
+    </div>
+    <div class="servicios-grid">
+      <div class="card" style="background-image: url('imagenes/card-cumpleanos.jpg')">
+        <span class="card-icon">🎂</span>
+        <h3>Cumpleaños</h3>
+        <p>Fiestas íntimas o multitudinarias con decoración temática, DJ y ambientación personalizada.</p>
+      </div>
+      <div class="card" style="background-image: url('imagenes/card-bodas.jpg')">
+        <span class="card-icon">💍</span>
+        <h3>Bodas & Casamientos</h3>
+        <p>Diseñamos la boda de tus sueños con ambientación personalizada y coordinación total del evento.</p>
+      </div>
+      <div class="card" style="background-image: url('imagenes/card-corporativo.jpg')">
+        <span class="card-icon">🏢</span>
+        <h3>Eventos Corporativos</h3>
+        <p>Lanzamientos, cenas de empresa y conferencias con equipamiento audiovisual capacitado.</p>
+      </div>
+      <div class="card" style="background-image: url('imagenes/card-catering.jpg')">
+        <span class="card-icon">🍽️</span>
+        <h3>Catering & Bebidas</h3>
+        <p>Te ofrecemos uan carta de comidas y barra de tragos premium para todos los gustos.</p>
+      </div>
+      <div class="card" style="background-image: url('imagenes/card-decoracion.jpg')">
+        <span class="card-icon">🎨</span>
+        <h3>Decoración & Ambientación</h3>
+        <p>Flores, iluminación y mobiliario temático para que cada rincón cuente una historia.</p>
+      </div>
+      <div class="card" style="background-image: url('imagenes/card-fotovideo.jpg')">
+        <span class="card-icon">📸</span>
+        <h3>Foto & Video</h3>
+        <p>Equipo capacitado para inmortalizar cada momento especial de tu celebración.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       GALERÍA
+  ======================== -->
+  <section id="galeria">
+    <p class="section-label">Nuestros eventos</p>
+    <h2 class="section-title">Momentos que <span>hablan solos</span></h2>
+    <p class="section-sub">Cada foto cuenta una historia de celebración.</p>
+
+    <div class="carrusel">
+      <div class="carrusel-track" id="carruselTrack">
+        <div class="carrusel-slide">
+          <img src="imagenes/cumpleanos-1.jpg" alt="Evento D' Francis"/>
+        </div>
+        <div class="carrusel-slide">
+          <img src="imagenes/cumpleanos-2.jpg" alt="Evento D' Francis"/>
+        </div>
+        <div class="carrusel-slide">
+          <img src="imagenes/cumpleanos-3.jpeg" alt="Evento D' Francis"/>
+        </div>
+        <div class="carrusel-slide">
+          <img src="imagenes/cumpleanos-4.jpeg" alt="Evento D' Francis"/>
+        </div>
+      </div>
+
+      <button class="carrusel-btn prev" onclick="moverCarrusel(-1)">&#8592;</button>
+      <button class="carrusel-btn next" onclick="moverCarrusel(1)">&#8594;</button>
+      <div class="carrusel-dots" id="carruselDots"></div>
+    </div>
+  </section>
+
+  <!-- ========================
+     VIDEOS
+======================== -->
+<section id="videos">
+  <p class="section-label">Nuestros momentos</p>
+  <h2 class="section-title">Vive la <span>experiencia</span></h2>
+  <p class="section-sub">Así se viven los eventos en D' Francis.</p>
+
+  <div class="carrusel video-carrusel">
+    <div class="carrusel-track" id="videoTrack">
+
+      <div class="carrusel-slide">
+        <video autoplay muted loop playsinline>
+          <source src="videos/video1.mp4" type="video/mp4"/>
+        </video>
+      </div>
+
+      <div class="carrusel-slide">
+        <video autoplay muted loop playsinline>
+          <source src="videos/video2.mp4" type="video/mp4"/>
+        </video>
+      </div>
+
+      <div class="carrusel-slide">
+        <video autoplay muted loop playsinline>
+          <source src="videos/video3.mp4" type="video/mp4"/>
+        </video>
+      </div>
+
+    </div>
+
+    <button class="carrusel-btn prev" onclick="moverVideo(-1)">&#8592;</button>
+    <button class="carrusel-btn next" onclick="moverVideo(1)">&#8594;</button>
+    <div class="carrusel-dots" id="videoDots"></div>
+  </div>
+</section>
+
+  <!-- ========================
+       UBICACIÓN
+  ======================== -->
+  <section id="ubicacion">
+    <div class="ubicacion-inner">
+      <div class="map-wrapper">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243.70558656891404!2d-76.92843339710039!3d-12.228674689946367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105bb912b44c7e5%3A0xd1e1ebad41fdde5a!2sSALON%20DE%20EVENTOS%20%22%20D&#39;%20FRANCIS%22!5e0!3m2!1ses!2spe!4v1772596487755!5m2!1ses!2spe"
+          allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <div class="ubicacion-info">
+        <p class="section-label">Dónde encontrarnos</p>
+        <h2 class="section-title">Visita nuestro<br/>salón principal</h2>
+        <div class="info-item">
+          <span class="info-icon">📍</span>
+          <div>
+            <h4>Dirección</h4>
+            <p>Av. 200 Millas, Villa El Salvador<br/>Lima, Perú</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">🕐</span>
+          <div>
+            <h4>Horario de atención</h4>
+            <p>Lunes a Viernes: 9:00 – 19:00 hs<br/>Sábados: 10:00 – 14:00 hs</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">📞</span>
+          <div>
+            <h4>Teléfono</h4>
+            <p>+51 984 336 412</p>
+          </div>
+        </div>
+        <a href="https://wa.me/51984336412?text=Hola!%20Quiero%20consultar%20sobre%20un%20evento" target="_blank" class="btn btn-primary">💬 Escríbenos ahora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       CONTACTO / CTA
+  ======================== -->
+  <section id="contacto">
+    <p class="section-label">¿Tienes un evento en mente?</p>
+    <h2 class="section-title">Empecemos a<br/><span>planificarlo juntos</span></h2>
+    <p class="section-sub">Cuéntanos de qué se trata y te armamos un paquete sin compromiso en menos de 24 hs.</p>
+    <div class="btn-group">
+      <a href="https://wa.me/51984336412?text=Hola!%20Quiero%20consultar%20sobre%20un%20evento" target="_blank" class="btn btn-primary">🟢 Contactar por WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- ========================
+       FOOTER
+  ======================== -->
+  <footer>
+    <p>© 2025 <span>Salón D' Francis</span> — Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- ========================
+       BOTÓN WHATSAPP FLOTANTE
+  ======================== -->
+  <a href="https://wa.me/51984336412?text=Hola!%20Quiero%20consultar%20sobre%20un%20evento"
+     target="_blank"
+     class="whatsapp-float"
+     title="WhatsApp">💬</a>
+
+  <!-- ========================
+       JAVASCRIPT — CARRUSEL
+  ======================== -->
+  <script>
+    let actual = 0;
+    const track = document.getElementById('carruselTrack');
+    const slides = document.querySelectorAll('#carruselTrack .carrusel-slide');
+    const dotsContainer = document.getElementById('carruselDots');
+
+    // Crear puntitos automáticamente
+    slides.forEach((_, i) => {
+      const dot = document.createElement('button');
+      dot.classList.add('dot');
+      if (i === 0) dot.classList.add('active');
+      dot.onclick = () => irA(i);
+      dotsContainer.appendChild(dot);
+    });
+
+    function irA(index) {
+      actual = index;
+      track.style.transform = `translateX(-${actual * 100}%)`;
+      document.querySelectorAll('.dot').forEach((d, i) => {
+        d.classList.toggle('active', i === actual);
+      });
+    }
+
+    function moverCarrusel(direccion) {
+      actual = (actual + direccion + slides.length) % slides.length;
+      irA(actual);
+    }
+
+    // Avance automático cada 4 segundos
+    setInterval(() => moverCarrusel(1), 4000);
+  </script>
+
+</body>
+</html>
+<script>
+  let actualVideo = 0;
+  const videoTrack = document.getElementById('videoTrack');
+  const videoSlides = document.querySelectorAll('#videoTrack .carrusel-slide');
+  const videoDotsContainer = document.getElementById('videoDots');
+
+  // Crear puntitos automáticamente
+  videoSlides.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.classList.add('dot');
+    if (i === 0) dot.classList.add('active');
+    dot.onclick = () => irAVideo(i);
+    videoDotsContainer.appendChild(dot);
+  });
+
+  function irAVideo(index) {
+    const videos = document.querySelectorAll('#videoTrack video');
+    
+    // Pausar todos y resetear
+    videos.forEach(v => { 
+      v.pause(); 
+      v.currentTime = 0; 
+    });
+
+    actualVideo = index;
+    videoTrack.style.transform = `translateX(-${actualVideo * 100}%)`;
+    
+    document.querySelectorAll('#videoDots .dot').forEach((d, i) => {
+      d.classList.toggle('active', i === actualVideo);
+    });
+
+    // Reproducir el video activo después de la animación
+    setTimeout(() => {
+      videos[actualVideo].play();
+    }, 500);
+  }
+
+  function moverVideo(direccion) {
+    actualVideo = (actualVideo + direccion + videoSlides.length) % videoSlides.length;
+    irAVideo(actualVideo);
+  }
+
+  // Reproducir el primer video al cargar
+  window.addEventListener('load', () => {
+    const videos = document.querySelectorAll('#videoTrack video');
+    if (videos.length > 0) videos[0].play();
+  });
+</script>
